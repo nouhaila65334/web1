@@ -1,0 +1,91 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+       
+        <div  class="g1">
+           <a> <button id="button" onclick="showhide()" style=" background-color: rgb(82, 197, 82); color:white;width: 115px;
+            border: rgb(82, 197, 82); margin-left: 6px;"><i class="fas fa-sliders-h" style="font-size: 40px;"></i></button></a>
+            <div id="newpost"  class="hidden" style="margin-top: 5px; color:white; font-size:15px;">
+                <h3>Store</h3>
+            </div>  
+        </div>
+            <div  class="g1">
+                <button id="button" onclick="showhide1()" style=" background-color: rgb(82, 197, 82); color:white;width: 115px;
+                border: rgb(82, 197, 82); margin-left: 7px;"><i class="fa-solid fa-users" style="font-size: 40px;"></i></button>
+                <div id="newpost1"  class="hidden1" style="margin-top: 5px; color:white; font-size:15px;">
+                    <h3>Utilisateurs</h3>
+                </div>  
+            </div>
+            <div  class="g1">
+                <button id="button" onclick="showhide2()" style=" background-color: rgb(82, 197, 82); color:white;width: 115px;
+                border:#4d9754; rgb(82, 197, 82); margin-left: 7px;"><i class="fa-solid fa-circle-info" style="font-size: 40px;"></i></button>
+                <div id="newpost2"  class="hidden2" style="margin-top: 5px; color:white; font-size:15px;">
+                    <h3>Logs</h3>
+                </div>  
+            </div>
+            <div  class="g1">
+                <button id="button" onclick="showhide3()" style=" background-color: rgb(82, 197, 82); color:white;width: 115px;
+                border: rgb(82, 197, 82); margin-left: 8px;"><i class="fa-solid fa-right-from-bracket" style="font-size: 40px;"></i></button>
+                <div id="newpost3"  class="hidden3" style="margin-top: 5px; color:white; font-size:15px;">
+                    <h3>Deconnexion</h3>
+                </div>  
+            </div>   
+    </div>
+    <div class="container">
+    <div class="context">
+        <P>WELCOME TO THE MONUMENT STORE</P>
+        <h2> LOGIN TO VIEW THE BEST MONUMENT IMAGES!</h2>
+    </div>
+    <div class="box">
+      
+        <div class="dream">
+          <img src="1.jpg">
+           <img src="2.jpg">
+            <img src="3.jpg">
+              
+        </div>
+  
+          <div class="dream">
+          <img src="6.jpg">
+           <img src="7.jpg">
+           
+              
+        </div>
+  
+          <div class="dream">
+          <img src="11.jpg">
+           <img src="12.jpg">
+        
+              
+        </div>
+       
+        
+  
+  
+
+
+</div>
+<script>
+    function showhide() {
+        var div = document.getElementById("newpost");
+        div.classList.toggle('hidden'); 
+    }
+    function showhide1() {
+        var div = document.getElementById("newpost1");
+        div.classList.toggle('hidden1'); 
+    }
+    function showhide2() {
+        var div = document.getElementById("newpost2");
+        div.classList.toggle('hidden2'); 
+    }
+    function showhide3() {
+        var div = document.getElementById("newpost3");
+        div.classList.toggle('hidden3'); 
+    }
+</script>
+</body>
